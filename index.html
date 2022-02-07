@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+     <span>TIME:</span>
+      <span id="timeHere"></span>
+      <div class="listIteam">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">SIGHUP</a></li>
+        </ul>
+      </div>
+      <div class="gridContainer">
+        <div class="mainbar">
+          <div>
+            <i class="fab fa-facebook"></i>
+          </div>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-viber"></i>
+        </div>
+
+        <div class="textHere">
+            
+          <div class="certainHeight">
+            <div class="imageAndDetail"></div>
+            <div class="detail">its Bhupendra</div>
+            <p class="margin">we just know about bhupendra and his hacking statisity .He is a profesional hacker from south africa just we know</p>
+            <p>click below for more inforamtion</p>
+            <button class="hover1">click here!!!</button>
+          </div>
+
+          <div class="certainHeight">
+           
+            <div class="imageAndDetail"></div>
+             <div class="detail">its Bhupendra</div>
+              <p class="margin">we just know about bhupendra and his hacking statisity .He is a profesional hacker from south africa just we know</p>
+            <p>click below for more inforamtion</p>
+            <button class="hover1">click here!!!</button>
+         </div>
+        
+          <div class="certainHeight">
+           
+            <div class="imageAndDetail"></div>
+             <div class="detail">its Bhupendra</div>
+              <p class="margin">we just know about bhupendra and his hacking statisity .He is a profesional hacker from south africa just we know</p>
+            <p>click below for more inforamtion</p>
+            <button class="hover1">click here!!!</button>
+         </div>
+        
+          <div class="certainHeight">
+           
+            <div class="imageAndDetail"></div>
+             <div class="detail">its Bhupendra</div>
+               <p class="margin">we just know about bhupendra and his hacking statisity .He is a profesional hacker from south africa just we know</p>
+            <p>click below for more inforamtion</p>
+            <button class="hover1">click here!!!</button>
+         </div>
+          </div>
+          <div class="requiredItem">2020 @copyright </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      setInterval(todayTime, 1000);
+
+      function todayTime() {
+        var time = new Date();
+        document.getElementById("timeHere").innerHTML =
+        time.toLocaleTimeString();
+      }
+    </script>
+  </body>
+</html>

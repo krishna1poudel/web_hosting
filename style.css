@@ -1,0 +1,174 @@
+* {
+  /* margin: 0px;
+  padding: 0px; */
+  box-sizing: border-box;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-image: url("moneyheist.jpg");
+  background-size: cover;
+  color: white;
+  font-style: italic;
+  animation: change 9s infinite linear;
+}
+@keyframes change {
+  0% {
+    background-image: url("moneyheist.jpg");
+    background-size: cover;
+  }
+  100% {
+    background-image: url("moheyheist3.jpg");
+    background-size: cover;
+  }
+}
+.flexFrist {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  box-shadow: 0px, 5px, 15px, rgba(0, 0, 0, 1);
+  justify-content: space-around;
+}
+.listIteam ul {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  list-style: none;
+  position: relative;
+}
+.listIteam ul li::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  left: 0%;
+  bottom: -10px;
+  background: #009688;
+  transition: 0.5s;
+}
+.listIteam ul li:hover::after {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.gridContainer {
+  height: 400px;
+  margin-top: 80px;
+  display: grid;
+  grid-template-rows: 350px 1fr;
+  grid-template-columns: 30px 1fr;
+  grid-template-areas:
+    "mainbar textHere"
+    "mainbar requiredItem";
+  grid-gap: 30px;
+}
+.mainbar {
+  grid-area: mainbar;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 5px 15px 7px black;
+  background: linear-gradient(30deg, rgb(202, 127, 40), rgb(40, 202, 48));
+  color: black;
+  border-radius: 10px;
+  border: 2px solid rgba(17, 0, 255, 1);
+}
+
+.textHere {
+  color: black;
+  grid-area: textHere;
+  box-shadow: 0px 5px 15px black;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 6px;
+  border-radius: 5px;
+  background: linear-gradient(30deg, rgb(202, 127, 40), rgb(40, 202, 48));
+}
+.requiredItem {
+  grid-area: requiredItem;
+  box-shadow: 0px 5px 15px black;
+  text-align: center;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 7px;
+}
+.fab {
+  transform: rotate(90deg);
+}
+.imageAndDetail {
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  background-image: url("bhupendra.jpg");
+  background-size: cover;
+  margin-left: 40%;
+}
+.certainHeight {
+  position: relative;
+  width: 250px;
+  height: 340px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 50px;
+}
+.margin {
+  margin-top: 50px;
+  margin-left: 15px;
+  margin-right: 20px;
+  color: rgb(194, 102, 171);
+}
+.requiredItem {
+  background: linear-gradient(30deg, rgb(202, 127, 40), rgb(40, 202, 48));
+}
+.hover1 {
+  border-radius: 5px;
+}
+.hover1:hover {
+  font-size: 20px;
+  background: linear-gradient(90deg, rgb(185, 194, 226), rgb(180, 224, 182));
+}
+
+.detail {
+  border-right: solid 3px rgba(0, 255, 0, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  font-size: 28px;
+  color: black(255, 255, 255, 0.7);
+}
+
+/* Animation */
+.detail {
+  animation: animated-text 4s steps(29, end) 1s 1 normal both,
+    animated-cursor 600ms steps(29, end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+  from {
+    width: 60px;
+  }
+  to {
+    width: 200px;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(0, 255, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
